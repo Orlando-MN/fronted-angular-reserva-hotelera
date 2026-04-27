@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })
-export class Navbar {}
+export class Navbar {
+  classApplied = false;
+  toggleClass() {
+    this.classApplied = !this.classApplied;
+  }
+}
